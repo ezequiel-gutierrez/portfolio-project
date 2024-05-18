@@ -1,1 +1,3 @@
 The shade of orange we have in mind is FF6E14 in hex value, the text so far will be black, we are open to changes
+
+On the information section you once wrote: "Hi! I'm Ezequiel, a 20-year-old front-end developer from Uruguay. I'm passionate about bringing web pages to life with dynamic JavaScript and building unique experiences with a creative twist. From building interactive interfaces to SEO optimization, I thrive on the challenge of creating engaging digital solutions. With a strong and ever-growing foundation on web technologies as well as git for version control, I'm always excited to explore new technologies and embrace new challenges."
