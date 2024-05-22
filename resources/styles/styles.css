@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+svg {
+    mix-blend-mode: exclusion;
+    fill: rgb(212, 69, 8);
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: rgb(212, 69, 8);
+    position: relative;
+}
+
+.hero-text {
+    top: 150px;
+    width: 100vw;
+    height: 75vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 3em;
+}
+
+.geometrical-shapes {
+    position: absolute;
+}
+
+@media only screen and (min-width: 1025px) {
+}
