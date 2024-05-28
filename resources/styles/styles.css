@@ -120,6 +120,17 @@ header {
     bottom: 1rem;
     width: 20rem;
     height: 20rem;
+    transform-origin: 58% 58%;
+    animation: triangle-movement 32s ease-in-out 0s infinite alternate;
+}
+
+@keyframes triangle-movement {
+    0% {
+        
+    }
+    100% {
+        transform: translate(100%, -30%) scale(0.3) rotate(1080deg);
+    }
 }
 
 @media only screen and (min-width: 1025px) {
