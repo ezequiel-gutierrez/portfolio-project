@@ -63,7 +63,7 @@ header {
 
 .cta-hero a {
     opacity: 0;
-    animation: cta-fade-in 1s ease-in 0s forwards;
+    animation: cta-fade-in 1.5s ease-in 0s forwards;
 }
 
 .geometrical-shapes {
@@ -100,6 +100,7 @@ header {
     bottom: 2.6875rem;
     width: 7rem;
     height: 7rem;
+    animation: pentagon-one 37.5s linear 0s infinite;
 }
 
 .geometrical-shapes img:nth-child(3) {
@@ -108,6 +109,7 @@ header {
     top: 1rem;
     width: 5rem;
     height: 5rem;
+    animation: pentagon-two 62.5s ease-in-out 0.5s infinite;
 }
 
 .geometrical-shapes img:nth-child(4) {
@@ -116,6 +118,7 @@ header {
     top: 1.8765rem;
     width: 11rem;
     height: 11rem;
+    animation: square-one 18s ease-in-out 0s infinite alternate;
 }
 
 .geometrical-shapes img:nth-child(5) {
@@ -124,15 +127,15 @@ header {
     top: 0rem;
     width: 18rem;
     height: 18rem;
-    animation: square-two 15s ease-in-out 0s infinite alternate;
+    animation: square-two 15s linear 0s infinite alternate;
 }
 
 .geometrical-shapes img:nth-child(6) {
     position: absolute;
     left: 2rem;
     bottom: 1rem;
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     transform-origin: 58% 58%;
     animation: triangle-movement 21s linear 0s infinite alternate;
 }
@@ -177,13 +180,63 @@ header {
     }
 }
 
+@keyframes square-one {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: translate(50%, 60%) rotate(235deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(555deg);
+    }
+}
+
 @keyframes square-two {
     0% {
         transform: rotate(45deg);
     }
     
     100% {
-        transform: rotate(-500deg) scale(0.7);
+        transform: translate(-20%, 20%) rotate(-500deg) scale(0.65);
+    }
+}
+
+@keyframes pentagon-two {
+    0% {
+
+    }
+
+    25% {
+        transform: translate(-350%, 90%) rotate(-360deg);
+    }
+
+    75% {
+        transform: translate(400%, 50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+}
+
+@keyframes pentagon-one {
+    0% {
+
+    }
+
+    25% {
+        transform: translate(65%, -150%) rotate(-95deg);
+    }
+
+    75% {
+        transform: translate(150%, 60%) rotate(94deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0deg);
     }
 }
 
