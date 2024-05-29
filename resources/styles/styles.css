@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     overflow: hidden;
     position: relative;
@@ -139,6 +143,13 @@ header {
     transform-origin: 58% 58%;
     animation: triangle-movement 21s linear 0s infinite alternate;
 }
+
+.skills-n-info {
+    z-index: 5;
+    height: 100vh;
+}
+
+/* Keyframes Area */
 
 @keyframes hero-text-falls-in-place {
     0% {
