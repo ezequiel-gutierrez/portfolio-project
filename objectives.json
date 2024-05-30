@@ -3,13 +3,13 @@
     "Add at least one interactive feature using JavaScript": 0,
     "Use Git version control": 1,
     "Use the command line and file navigation": 1,
-    "Develop locally on your computer": 0,
+    "Develop locally on your computer": 1,
     "Deploy your site to the web using GitHub Pages": 0,
 
     "To Do List": {
-        "Get Images for the hero": 0,
-        "Get Icons for the skill section": 0,
-        "Design the skill section": 0,
+        "Get Images for the hero": 1,
+        "Get Icons for the skill section": 1,
+        "Design the skill section": 1,
         "Create a last call to action at the end (and perhaps the begining too)": 0,
         "Design the contact page": 0
     }
