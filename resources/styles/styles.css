@@ -71,6 +71,11 @@ header {
 }
 
 .geometrical-shapes {
+    opacity: 0;
+    animation: cta-fade-in 2s ease 0s forwards;
+}
+
+.geometrical-shapes {
     z-index: 0;
     position: absolute;
     top: 0;
