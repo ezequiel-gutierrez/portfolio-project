@@ -8,6 +8,8 @@ body {
     overflow-x: hidden;
 }
 
+/* Hero Starts Here */
+
 header {
     overflow: hidden;
     position: relative;
@@ -16,8 +18,6 @@ header {
     font-family: "Roboto", Arial;
     color: rgb(212, 69, 8);
 }
-
-/*Test  */
 
 .hero-text {
     z-index: 11;
@@ -149,13 +149,15 @@ header {
     animation: triangle-movement 21s linear 0s infinite alternate;
 }
 
+/* Information Section Starts Here */
+
 .skills-n-info {
     z-index: 5;
-    height: 100vh;
+    height: 110vh;
     background-color: rgb(212, 69, 8);
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     color: rgb(240, 240, 240);
-    padding: 4.5rem 9rem 2rem;
+    padding: 4.5rem 9rem;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -214,6 +216,35 @@ header {
     padding: 0 2rem;
     line-height: 1.4;
 }
+
+/* Selected Projects Start Here */
+
+section.selected-projects {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Good luck future me :) 
+.selected-projects-bg {
+    z-index: 999;
+    border: solid medium fuchsia;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.selected-projects-bg img {
+    position: absolute;
+}
+
+.selected-projects-bg img:nth-child(2) {
+    right: 10%;
+    bottom: 0;
+    border: solid medium green;
+} */
 
 /* Keyframes Area */
 
