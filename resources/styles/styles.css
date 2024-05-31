@@ -221,30 +221,26 @@ header {
 
 section.selected-projects {
     width: 100vw;
-    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 0 0 2.5rem;
 }
 
-/* Good luck future me :) 
+.selected-projects > h2 {
+    margin-bottom: 8rem;
+    padding: 2.5rem;
+    font-size: 1.875rem;
+    letter-spacing: 3px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: rgb(212, 69, 8);
+    border-bottom: solid 0.5rem rgb(212, 69, 8);
+}
+
+/* Good luck future me :) */ 
 .selected-projects-bg {
-    z-index: 999;
-    border: solid medium fuchsia;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
+    display: none;
 }
-
-.selected-projects-bg img {
-    position: absolute;
-}
-
-.selected-projects-bg img:nth-child(2) {
-    right: 10%;
-    bottom: 0;
-    border: solid medium green;
-} */
 
 /* Keyframes Area */
 
