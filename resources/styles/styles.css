@@ -228,13 +228,60 @@ section.selected-projects {
 }
 
 .selected-projects > h2 {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     padding: 2.5rem;
     font-size: 1.875rem;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     color: rgb(212, 69, 8);
     border-bottom: solid 0.5rem rgb(212, 69, 8);
+}
+
+.showcase-projects-section {
+    padding: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem 0;
+}
+
+.project-box {
+    width: 31.25rem;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-box h3 {
+    padding: 1rem 0;
+}
+
+.project-box h3, .project-box a {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: "Raleway",Arial, Helvetica, sans-serif;
+    color: rgb(212, 69, 8);
+}
+
+.project-image-container {
+    overflow: hidden;
+    width: inherit;
+    height: 18rem;
+    border-radius: 15px;
+    border: solid 5px rgb(212, 69, 8);
+}
+
+.project-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.project-description {
+    display: none;
 }
 
 /* Good luck future me :) */ 
