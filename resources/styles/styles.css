@@ -282,10 +282,10 @@ section.selected-projects {
 .project-container h3 {
     color: rgb(240, 240, 240);
     text-shadow:
-    -1px -1px 0 rgb(212, 69, 8),  
-    1px -1px 0 rgb(212, 69, 8),
-    -1px  1px 0 rgb(212, 69, 8),
-    1px  1px 0 rgb(212, 69, 8);
+    -1px -1px 0 rgb(141, 49, 10),  
+    1px -1px 0 rgb(141, 49, 10),
+    -1px  1px 0 rgb(141, 49, 10),
+    1px  1px 0 rgb(141, 49, 10);
     font-weight: 900;
     letter-spacing: 1px;
     background-color: rgba(236, 116, 65, 0.6);
