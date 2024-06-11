@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -156,69 +160,82 @@ header {
 /* Information Section Starts Here */
 
 .skills-n-info {
-    z-index: 5;
+    position: relative;
+    width: 100vw;
     height: 110vh;
-    background-color: rgb(212, 69, 8);
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
-    color: rgb(240, 240, 240);
-    padding: 4.5rem 9rem;
+    border: dashed 5px yellow;
+}
+
+.hexagon-shape {
+    aspect-ratio: 1/1;
+    width: 17.625rem;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    /* border: 5px dotted rgb(202, 6, 12); */
 }
 
-.skills-n-info > h2 {
-    text-align: center;
-    font-size: 3.125rem;
-    margin-bottom: 2rem;
-}
-
-.three-skill-showcase {
+.hexagon-shape img.hexagon {
+    z-index: -1;
+    position: absolute;
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    gap: 0 2.5rem;
+    aspect-ratio: 1/1;
 }
 
-.skill-column {
+.hexagon-shape {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hexagon-container1 {
+    transform: translate(-100%, -90%);
+}
+
+.hexagon-container2 {
+    transform: translate(0, -90%);
+}
+
+.hexagon-container3 {
+    transform: translate(-50%, -5%);
+}
+
+.text-container {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
-    width: 33.333%;
-    height: inherit;
+    align-items: center;
     text-align: center;
-    background-color: rgb(141, 49, 10);
-    border-radius: 10px;
+    color: rgb(240, 240, 240);
+    opacity: 0;
 }
 
-.icon-circle-container {
-    align-self: center;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    background-color: rgb(240, 240, 240);
-    margin: 1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.text-container h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+    text-shadow:
+    -1px -1px 0 rgb(212, 69, 8),  
+    1px -1px 0 rgb(212, 69, 8),
+    -1px  1px 0 rgb(212, 69, 8),
+    1px  1px 0 rgb(212, 69, 8);
 }
 
-.skill-column h3 {
-    font-size: 2rem;
-    /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
-    font-weight: 600;
-    margin-bottom: 1rem;
+.text-container p {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    line-height: 1.4rem;
 }
 
-.skill-column p {
-    font-size: 1.25rem;
-    padding: 0 2rem;
-    line-height: 1.4;
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.4);
 }
 
 /* Selected Projects Start Here */
@@ -253,7 +270,6 @@ section.selected-projects {
 .project-container {
     position: relative;
     aspect-ratio: 4/3;
-    /* margin-left: 50px; */
     width: 500px;
     background-color: rgb(212, 69, 8);
     border: solid medium rgb(212, 69, 8);
