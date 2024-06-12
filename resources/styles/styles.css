@@ -171,7 +171,6 @@ header {
     width: 17.625rem;
     position: absolute;
     display: flex;
-    /* border: 5px dotted rgb(202, 6, 12); */
     opacity: 0;
     transition: opacity 1s ease;
 }
