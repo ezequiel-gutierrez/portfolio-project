@@ -172,6 +172,12 @@ header {
     position: absolute;
     display: flex;
     /* border: 5px dotted rgb(202, 6, 12); */
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.hexagon-is-visible {
+    opacity: 1;
 }
 
 .hexagon-shape img.hexagon {
@@ -211,6 +217,11 @@ header {
     text-align: center;
     color: rgb(240, 240, 240);
     opacity: 0;
+    transition: opacity 0.5s ease 1.2s;
+}
+
+.show-after-delay {
+    opacity: 1;
 }
 
 .text-container h3 {
@@ -229,6 +240,7 @@ header {
 .text-container p {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     line-height: 1.4rem;
+    letter-spacing: 1px;
 }
 
 .icon {
@@ -236,6 +248,12 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.4);
+    opacity: 1;
+    transition: opacity 0.5s ease 1s;
+}
+
+.hide-icon-on-delay {
+    opacity: 0;
 }
 
 /* Selected Projects Start Here */
