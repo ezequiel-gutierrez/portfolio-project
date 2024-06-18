@@ -1,9 +1,11 @@
-const hexagonVisibility =  new IntersectionObserver((entries) => {
+const hexagonVisibility = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add("hexagon-is-visible");
+            console.log("Yes, im working");
         } else {
             entry.target.classList.remove("hexagon-is-visible");
+            console.log("Yes, im also working");
         }
     });
 });
@@ -63,12 +65,15 @@ function observeElement(observedElement, observer) {
 }
 
 const hexagons = document.querySelectorAll(".hexagon-shape");
-const hexagonOne = document.querySelector(".hexagon-container1");
-const hexagonTwo = document.querySelector(".hexagon-container2");
-const hexagonThree = document.querySelector(".hexagon-container3");
+const hexagonOne = document.querySelectorAll(".hexagon-container1");
+const hexagonTwo = document.querySelectorAll(".hexagon-container2");
+const hexagonThree = document.querySelectorAll(".hexagon-container3");
 const icons = document.querySelectorAll(".icon");
 const text = document.querySelectorAll(".text-container");
 
 observeElement(hexagons, hexagonVisibility);
 observeElement(icons, hidingIcons);
 observeElement(text, showingText);
+observeElement(hexagonOne, hexagonOneShows);
+observeElement(hexagonTwo, hexagonTwoShows);
+observeElement(hexagonThree, hexagonThreeShows);
