@@ -163,7 +163,6 @@ header {
     position: relative;
     width: 100vw;
     height: 110vh;
-    border: dashed 5px yellow;
 }
 
 .hexagon-shape {
@@ -171,7 +170,10 @@ header {
     width: 17.625rem;
     position: absolute;
     display: flex;
-    /* border: 5px dotted rgb(202, 6, 12); */
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transition: all 2s ease-in-out;
 }
 
 .hexagon-shape img.hexagon {
@@ -181,21 +183,32 @@ header {
     aspect-ratio: 1/1;
 }
 
-.hexagon-shape {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+/* JavaScript Interaction here */
+.hexagon-is-visible {
+    opacity: 1;
 }
 
 .hexagon-container1 {
-    transform: translate(-100%, -90%);
+    transform: translate(-220%, -120%);
 }
 
 .hexagon-container2 {
-    transform: translate(0, -90%);
+    transform: translate(120%, -120%);
 }
 
 .hexagon-container3 {
+    transform: translate(-50%, 20% );
+}
+
+.hexagon1-coming-down {
+    transform: translate(-100%, -90%);
+}
+
+.hexagon2-coming-down {
+    transform: translate(0, -90%);
+}
+
+.hexagon3-coming-up {
     transform: translate(-50%, -5%);
 }
 
@@ -211,6 +224,12 @@ header {
     text-align: center;
     color: rgb(240, 240, 240);
     opacity: 0;
+    transition: opacity 0.5s ease 2.2s;
+}
+
+/* JavaScript Interaction here */
+.show-after-delay {
+    opacity: 1;
 }
 
 .text-container h3 {
@@ -229,6 +248,7 @@ header {
 .text-container p {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     line-height: 1.4rem;
+    letter-spacing: 1px;
 }
 
 .icon {
@@ -236,6 +256,67 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.4);
+    opacity: 1;
+    transition: opacity 0.5s ease 2s;
+}
+
+/* JavaScript Interaction here */
+.hide-icon-on-delay {
+    opacity: 0;
+}
+
+/* Skill-n-info bg starts here */
+
+.bg-left-hexagons, .bg-right-hexagons {
+    height: inherit;
+    width: 20vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-left-hexagons {
+    left: 0;
+}
+
+.bg-right-hexagons {
+    right: 0;
+}
+
+.bg-left-hexagons img, .bg-right-hexagons img {
+    width: 50%;
+    height: auto;
+}
+
+img.bg-hexagon {
+    position: absolute;
+    animation: hexagons-spin 2.5s ease-in-out 0s alternate infinite;
+}
+
+.bg-left-hexagons img:nth-child(1), .bg-left-hexagons img:nth-child(3), .bg-left-hexagons img:nth-child(5),
+.bg-right-hexagons img:nth-child(2), .bg-right-hexagons img:nth-child(4) {
+    left: 10%;
+}
+
+.bg-left-hexagons img:nth-child(2), .bg-left-hexagons img:nth-child(4),
+.bg-right-hexagons img:nth-child(1), .bg-right-hexagons img:nth-child(3), .bg-right-hexagons img:nth-child(5) {
+    right: 10%;
+}
+
+.bg-left-hexagons img:nth-child(2), .bg-right-hexagons img:nth-child(2) {
+    top: 20%;
+}
+
+.bg-left-hexagons img:nth-child(3), .bg-right-hexagons img:nth-child(3) {
+    top: 40%;
+}
+
+.bg-left-hexagons img:nth-child(4), .bg-right-hexagons img:nth-child(4) {
+    top: 60%;
+}
+
+.bg-left-hexagons img:nth-child(5), .bg-right-hexagons img:nth-child(5) {
+    top: 80%;
 }
 
 /* Selected Projects Start Here */
@@ -356,13 +437,9 @@ section.selected-projects {
     height: auto;
 }
 
-/* Delete after */
-.project-box{
-    display:none;
-}
-
 /* Keyframes Area */
 
+/* Keyframes for hero */
 @keyframes hero-text-falls-in-place {
     0% {
 
@@ -463,5 +540,17 @@ section.selected-projects {
     }
 }
 
-@media only screen and (min-width: 1025px) {
+/* Keyframes for second section */
+
+@keyframes hexagons-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
+/* Media Queries */
+@media only screen and (min-width: 1025px) {
+}    
