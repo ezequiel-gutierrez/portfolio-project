@@ -163,7 +163,6 @@ header {
     position: relative;
     width: 100vw;
     height: 110vh;
-    border: dashed 5px yellow;
 }
 
 .hexagon-shape {
@@ -174,7 +173,7 @@ header {
     left: 50%;
     top: 50%;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 .hexagon-shape img.hexagon {
@@ -225,7 +224,7 @@ header {
     text-align: center;
     color: rgb(240, 240, 240);
     opacity: 0;
-    transition: opacity 0.5s ease 1.2s;
+    transition: opacity 0.5s ease 2.2s;
 }
 
 /* JavaScript Interaction here */
@@ -258,12 +257,66 @@ header {
     left: 50%;
     transform: translate(-50%, -50%) scale(1.4);
     opacity: 1;
-    transition: opacity 0.5s ease 1s;
+    transition: opacity 0.5s ease 2s;
 }
 
 /* JavaScript Interaction here */
 .hide-icon-on-delay {
     opacity: 0;
+}
+
+/* Skill-n-info bg starts here */
+
+.bg-left-hexagons, .bg-right-hexagons {
+    height: inherit;
+    width: 20vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-left-hexagons {
+    left: 0;
+}
+
+.bg-right-hexagons {
+    right: 0;
+}
+
+.bg-left-hexagons img, .bg-right-hexagons img {
+    width: 50%;
+    height: auto;
+}
+
+img.bg-hexagon {
+    position: absolute;
+    animation: hexagons-spin 2.5s ease-in-out 0s alternate infinite;
+}
+
+.bg-left-hexagons img:nth-child(1), .bg-left-hexagons img:nth-child(3), .bg-left-hexagons img:nth-child(5),
+.bg-right-hexagons img:nth-child(2), .bg-right-hexagons img:nth-child(4) {
+    left: 10%;
+}
+
+.bg-left-hexagons img:nth-child(2), .bg-left-hexagons img:nth-child(4),
+.bg-right-hexagons img:nth-child(1), .bg-right-hexagons img:nth-child(3), .bg-right-hexagons img:nth-child(5) {
+    right: 10%;
+}
+
+.bg-left-hexagons img:nth-child(2), .bg-right-hexagons img:nth-child(2) {
+    top: 20%;
+}
+
+.bg-left-hexagons img:nth-child(3), .bg-right-hexagons img:nth-child(3) {
+    top: 40%;
+}
+
+.bg-left-hexagons img:nth-child(4), .bg-right-hexagons img:nth-child(4) {
+    top: 60%;
+}
+
+.bg-left-hexagons img:nth-child(5), .bg-right-hexagons img:nth-child(5) {
+    top: 80%;
 }
 
 /* Selected Projects Start Here */
@@ -384,13 +437,9 @@ section.selected-projects {
     height: auto;
 }
 
-/* Delete after */
-.project-box{
-    display:none;
-}
-
 /* Keyframes Area */
 
+/* Keyframes for hero */
 @keyframes hero-text-falls-in-place {
     0% {
 
@@ -491,5 +540,17 @@ section.selected-projects {
     }
 }
 
-@media only screen and (min-width: 1025px) {
+/* Keyframes for second section */
+
+@keyframes hexagons-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
+/* Media Queries */
+@media only screen and (min-width: 1025px) {
+}    
