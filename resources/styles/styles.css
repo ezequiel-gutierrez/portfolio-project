@@ -326,7 +326,8 @@ section.selected-projects {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 0 0 2.5rem;
+    padding: 0 0 6rem;
+    border-bottom: solid 0.5rem rgb(212, 69, 8);
 }
 
 .selected-projects > h2 {
@@ -433,6 +434,57 @@ section.selected-projects {
 }
 
 .project-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+/* Known technologies Section Starts Right Here */
+
+.skill-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 110vh;
+    position: relative;
+    border: dashed medium yellow;
+}
+
+.the-skill-master {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgb(212, 69, 8);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: rgb(240, 240, 240);
+    text-shadow:
+    -1px -1px 0 rgb(175, 53, 0),  
+    1px -1px 0 rgb(175, 53, 0),
+    -1px  1px 0 rgb(175, 53, 0),
+    1px  1px 0 rgb(175, 53, 0);
+    letter-spacing: 1px;
+}
+
+.technology-bubble {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    aspect-ratio: 1/1;
+    padding: 1.4rem;
+    border-radius: 50%;
+    background-color: rgb(228, 73, 7);
+    display: none;
+}
+
+.technology-bubble img {
     width: 100%;
     height: auto;
 }
