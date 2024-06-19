@@ -2,10 +2,8 @@ const hexagonVisibility = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add("hexagon-is-visible");
-            console.log("Yes, im working");
         } else {
             entry.target.classList.remove("hexagon-is-visible");
-            console.log("Yes, im also working");
         }
     });
 });
