@@ -460,7 +460,7 @@ section.selected-projects {
     background-color: rgb(212, 69, 8);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 1.875rem;
+    font-size: 2.875rem;
     font-weight: 900;
     color: rgb(240, 240, 240);
     text-shadow:
@@ -469,9 +469,11 @@ section.selected-projects {
     -1px  1px 0 rgb(175, 53, 0),
     1px  1px 0 rgb(175, 53, 0);
     letter-spacing: 1px;
+    user-select: none;
 }
 
 .technology-bubble {
+    z-index: -1;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -481,7 +483,8 @@ section.selected-projects {
     padding: 1.4rem;
     border-radius: 50%;
     background-color: rgb(228, 73, 7);
-    display: none;
+    transform: translate(0%, -260%);
+    /* animation: technology-spawns 5s ease-out infinite; */
 }
 
 .technology-bubble img {
@@ -600,6 +603,22 @@ section.selected-projects {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* Keyframes for technologies section */
+
+@keyframes bubble-spawn-1 {
+
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+    
+
+    100% {
+        transform: translate(-350%, -150%);
+        opacity: 0;
     }
 }
 

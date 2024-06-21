@@ -1,3 +1,5 @@
+// Hexagons being observed
+
 const hexagonVisibility = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
