@@ -472,6 +472,15 @@ section.selected-projects {
     user-select: none;
 }
 
+.bubbles {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .technology-bubble {
     z-index: -1;
     position: absolute;
@@ -483,13 +492,81 @@ section.selected-projects {
     padding: 1.4rem;
     border-radius: 50%;
     background-color: rgb(228, 73, 7);
-    transform: translate(0%, -260%);
-    /* animation: technology-spawns 5s ease-out infinite; */
 }
 
 .technology-bubble img {
     width: 100%;
     height: auto;
+}
+
+.bubbles .technology-bubble:nth-child(1) {
+    transform: translate(-523%, -223%);
+    /* CSS */
+}
+
+.bubbles .technology-bubble:nth-child(2) {
+    transform: translate(610%, 233%);
+    /* figma */
+}
+
+.bubbles .technology-bubble:nth-child(3) {
+    transform: translate(-460%, 20%);
+    /* git */
+}
+
+.bubbles .technology-bubble:nth-child(4) {
+    transform: translate(325%, -150%);
+    /* github */
+}
+
+.bubbles .technology-bubble:nth-child(5) {
+    transform: translate(-610%, -90%);
+    /* Chrome */
+}
+
+.bubbles .technology-bubble:nth-child(6) {
+    transform: translate(100%, 280%);
+    /* html */
+}
+
+.bubbles .technology-bubble:nth-child(7) {
+    transform: translate(-570%, 260%);
+    /* javascript */
+}
+
+.bubbles .technology-bubble:nth-child(8) {
+    transform: translate(550%, -75%);
+    /* linux */
+}
+
+.bubbles .technology-bubble:nth-child(9) {
+    transform: translate(-310%, -125%);
+    /* node */
+}
+
+.bubbles .technology-bubble:nth-child(10) {
+    transform: translate(360%, 290%);
+    /* npm */
+}
+
+.bubbles .technology-bubble:nth-child(11) {
+    transform: translate(-326%, 226%);
+    /* terminal */
+}
+
+.bubbles .technology-bubble:nth-child(12) {
+    transform: translate(600%, -260%);
+    /* accesible */
+}
+
+.bubbles .technology-bubble:nth-child(13) {
+    transform: translate(-170%, -240%);
+    /* vscode */
+}
+
+.bubbles .technology-bubble:nth-child(14) {
+    transform: translate(380%, 50%);
+    /* windows */
 }
 
 /* Keyframes Area */
@@ -606,19 +683,11 @@ section.selected-projects {
     }
 }
 
-/* Keyframes for technologies section */
+/* Keyframes for technologies */
 
-@keyframes bubble-spawn-1 {
-
+@keyframes bobbing {
     0% {
-        transform: translate(0%, 0%);
-        opacity: 1;
-    }
-    
-
-    100% {
-        transform: translate(-350%, -150%);
-        opacity: 0;
+        transform: translateY(calc());
     }
 }
 

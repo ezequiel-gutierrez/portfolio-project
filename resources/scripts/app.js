@@ -60,6 +60,16 @@ const hexagonThreeShows = new IntersectionObserver((entries) => {
     });
 });
 
+const bubblesOnScreen = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        } else {
+            entry.target.classList.remove("active");
+        }
+    });
+});
+
 function observeElement(observedElement, observer) {
     observedElement.forEach((element) => observer.observe(element));
 }
@@ -70,6 +80,7 @@ const hexagonTwo = document.querySelectorAll(".hexagon-container2");
 const hexagonThree = document.querySelectorAll(".hexagon-container3");
 const icons = document.querySelectorAll(".icon");
 const text = document.querySelectorAll(".text-container");
+const bubbles = document.querySelectorAll(".technology-bubble");
 
 observeElement(hexagons, hexagonVisibility);
 observeElement(icons, hidingIcons);
@@ -77,3 +88,4 @@ observeElement(text, showingText);
 observeElement(hexagonOne, hexagonOneShows);
 observeElement(hexagonTwo, hexagonTwoShows);
 observeElement(hexagonThree, hexagonThreeShows);
+observeElement(bubbles, bubblesOnScreen);
