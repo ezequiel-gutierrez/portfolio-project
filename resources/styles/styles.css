@@ -470,6 +470,7 @@ section.selected-projects {
     1px  1px 0 rgb(175, 53, 0);
     letter-spacing: 1px;
     user-select: none;
+    opacity: 0;
 }
 
 .bubbles {
@@ -492,6 +493,8 @@ section.selected-projects {
     padding: 1.4rem;
     border-radius: 50%;
     background-color: rgb(228, 73, 7);
+    opacity: 1;
+    transition: opacity 1.5s ease-out 0.25s, transform 1.5s ease-out 0.25s;
 }
 
 .technology-bubble img {
@@ -501,7 +504,12 @@ section.selected-projects {
 
 .bubbles .technology-bubble:nth-child(1) {
     transform: translate(-523%, -223%);
+    /* animation: bobbing 2s ease-out 0s infinite alternate; */
     /* CSS */
+}
+
+.bubbles .technology-bubble:nth-child(1) {
+    transform: translateY(var(--y-level));
 }
 
 .bubbles .technology-bubble:nth-child(2) {
@@ -567,6 +575,11 @@ section.selected-projects {
 .bubbles .technology-bubble:nth-child(14) {
     transform: translate(380%, 50%);
     /* windows */
+}
+
+.bubbles .hide-bubbles:nth-child(-n+14) {
+    opacity: 0;
+    transform: translate(50%, 50%);
 }
 
 /* Keyframes Area */
@@ -687,7 +700,15 @@ section.selected-projects {
 
 @keyframes bobbing {
     0% {
-        transform: translateY(calc());
+        transform: translateY(var(--y-level));
+    }
+
+    50% {
+        transform: translateY(calc(var(--y-level)+2%));
+    }
+
+    100% {
+        transform: translateY(var(--y-level));
     }
 }
 

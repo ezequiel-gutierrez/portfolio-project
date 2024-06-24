@@ -63,9 +63,11 @@ const hexagonThreeShows = new IntersectionObserver((entries) => {
 const bubblesOnScreen = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add("active");
+            bubbles.forEach((element) => element.classList.remove("hide-bubbles"));
+            console.log("im also working, noob")
         } else {
-            entry.target.classList.remove("active");
+            bubbles.forEach((element) => element.classList.add("hide-bubbles"));
+            console.log("im working, dont mind me")
         }
     });
 });
@@ -81,6 +83,7 @@ const hexagonThree = document.querySelectorAll(".hexagon-container3");
 const icons = document.querySelectorAll(".icon");
 const text = document.querySelectorAll(".text-container");
 const bubbles = document.querySelectorAll(".technology-bubble");
+const skillMaster = document.querySelectorAll(".the-skill-master");
 
 observeElement(hexagons, hexagonVisibility);
 observeElement(icons, hidingIcons);
@@ -88,4 +91,16 @@ observeElement(text, showingText);
 observeElement(hexagonOne, hexagonOneShows);
 observeElement(hexagonTwo, hexagonTwoShows);
 observeElement(hexagonThree, hexagonThreeShows);
-observeElement(bubbles, bubblesOnScreen);
+observeElement(skillMaster, bubblesOnScreen);
+
+bubbles.forEach((element) => {
+    const transformStyle = window.getComputedStyle(element).transform;
+
+    const regex = transformStyle.match(/matrix.*\((.+)\)/);
+    if (regex) {
+        const values = regex[1].split(", ");
+        const yLevel = parseFloat(values[5]);
+
+        element.style.setProperty("--y-level", `${yLevel}%`);
+    }
+});
