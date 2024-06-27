@@ -470,7 +470,7 @@ section.selected-projects {
     1px  1px 0 rgb(175, 53, 0);
     letter-spacing: 1px;
     user-select: none;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .bubbles {
@@ -504,12 +504,7 @@ section.selected-projects {
 
 .bubbles .technology-bubble:nth-child(1) {
     transform: translate(-523%, -223%);
-    /* animation: bobbing 2s ease-out 0s infinite alternate; */
     /* CSS */
-}
-
-.bubbles .technology-bubble:nth-child(1) {
-    transform: translateY(var(--y-level));
 }
 
 .bubbles .technology-bubble:nth-child(2) {
@@ -699,17 +694,23 @@ section.selected-projects {
 /* Keyframes for technologies */
 
 @keyframes bobbing {
+    
     0% {
-        transform: translateY(var(--y-level));
+        transform: scale(1);
     }
 
-    50% {
-        transform: translateY(calc(var(--y-level)+2%));
+    25% {
+        transform: scale(1.1);
+    }
+
+    75% {
+        transform: scale(0.95);
     }
 
     100% {
-        transform: translateY(var(--y-level));
+        transform: scale(1);
     }
+
 }
 
 /* Media Queries */
