@@ -141,8 +141,8 @@ bubbles.forEach((elem, index) => {
                 h2Text.textContent = "Skills";
                 break;
         }
-    })
+    });
     elem.addEventListener("mouseleave", () => {
         h2Text.textContent = "SKILLS";
-    })
-})
+    });
+});
