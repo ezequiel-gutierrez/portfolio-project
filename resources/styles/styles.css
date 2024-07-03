@@ -450,6 +450,7 @@ section.selected-projects {
 }
 
 .the-skill-master {
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,6 +470,10 @@ section.selected-projects {
     1px  1px 0 rgb(175, 53, 0);
     letter-spacing: 1px;
     user-select: none;
+}
+
+.skill-namer {
+ transition: filter 0.7s ease;
 }
 
 .bubbles {
