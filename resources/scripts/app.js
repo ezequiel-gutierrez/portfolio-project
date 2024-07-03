@@ -1,11 +1,11 @@
+// Hexagons being observed
+
 const hexagonVisibility = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add("hexagon-is-visible");
-            console.log("Yes, im working");
         } else {
             entry.target.classList.remove("hexagon-is-visible");
-            console.log("Yes, im also working");
         }
     });
 });
@@ -60,6 +60,16 @@ const hexagonThreeShows = new IntersectionObserver((entries) => {
     });
 });
 
+const bubblesOnScreen = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            bubbles.forEach((element) => element.classList.add("bubbles-showing"));
+        } else {
+            bubbles.forEach((element) => element.classList.remove("bubbles-showing"));
+        }
+    });
+});
+
 function observeElement(observedElement, observer) {
     observedElement.forEach((element) => observer.observe(element));
 }
@@ -70,6 +80,8 @@ const hexagonTwo = document.querySelectorAll(".hexagon-container2");
 const hexagonThree = document.querySelectorAll(".hexagon-container3");
 const icons = document.querySelectorAll(".icon");
 const text = document.querySelectorAll(".text-container");
+const bubbles = document.querySelectorAll(".technology-bubble");
+const skillMaster = document.querySelectorAll(".the-skill-master");
 
 observeElement(hexagons, hexagonVisibility);
 observeElement(icons, hidingIcons);
@@ -77,3 +89,60 @@ observeElement(text, showingText);
 observeElement(hexagonOne, hexagonOneShows);
 observeElement(hexagonTwo, hexagonTwoShows);
 observeElement(hexagonThree, hexagonThreeShows);
+observeElement(skillMaster, bubblesOnScreen);
+
+const h2Text = document.querySelector(".skill-namer");
+bubbles.forEach((elem, index) => {
+    elem.addEventListener("mouseover", () => {
+        switch (index) {
+            case 0:
+                h2Text.textContent = "CSS";
+                break;
+            case 1:
+                h2Text.textContent = "Figma";
+                break;
+            case 2:
+                h2Text.textContent = "Git";
+                break;
+            case 3:
+                h2Text.textContent = "GitHub";
+                break;
+            case 4:
+                h2Text.textContent = "Chrome DevTools";
+                break;
+            case 5:
+                h2Text.textContent = "HTML";
+                break;
+            case 6:
+                h2Text.textContent = "JavaScript";
+                break;
+            case 7:
+                h2Text.textContent = "Linux";
+                break;
+            case 8:
+                h2Text.textContent = "Node.js";
+                break;
+            case 9:
+                h2Text.textContent = "NPM";
+                break;
+            case 10:
+                h2Text.textContent = "Terminal - Bash";
+                break;
+            case 11:
+                h2Text.textContent = "Accesibility";
+                break;
+            case 12:
+                h2Text.textContent = "VSCode";
+                break;
+            case 13:
+                h2Text.textContent = "Windows";
+                break;
+            default:
+                h2Text.textContent = "Skills";
+                break;
+        }
+    });
+    elem.addEventListener("mouseleave", () => {
+        h2Text.textContent = "SKILLS";
+    });
+});

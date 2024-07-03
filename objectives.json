@@ -1,15 +1,16 @@
 {
-    "Build a website using HTML and CSS": 0,
-    "Add at least one interactive feature using JavaScript": 0,
+    "Build a website using HTML and CSS": 1,
+    "Add at least one interactive feature using JavaScript": 1,
     "Use Git version control": 1,
     "Use the command line and file navigation": 1,
     "Develop locally on your computer": 1,
-    "Deploy your site to the web using GitHub Pages": 0,
+    "Deploy your site to the web using GitHub Pages": 1,
 
     "To Do List": {
         "Get Images for the hero": 1,
         "Get Icons for the skill section": 1,
         "Design the skill section": 1,
+        "Design the technologies known section": 0,
         "Create a last call to action at the end (and perhaps the begining too)": 0,
         "Design the contact page": 0
     }
