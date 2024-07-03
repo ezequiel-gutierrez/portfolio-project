@@ -91,51 +91,61 @@ observeElement(hexagonTwo, hexagonTwoShows);
 observeElement(hexagonThree, hexagonThreeShows);
 observeElement(skillMaster, bubblesOnScreen);
 
+function changeText(element, word) {
+    element.style.filter = "blur(100px)";
+    setTimeout(() => {
+        element.style.filter = "blur(0px)"
+    }, 200)
+    setTimeout(()=> {
+        element.textContent = word;
+    }, 100);
+}
+
 const h2Text = document.querySelector(".skill-namer");
 bubbles.forEach((elem, index) => {
     elem.addEventListener("mouseover", () => {
         switch (index) {
             case 0:
-                h2Text.textContent = "CSS";
+                changeText(h2Text, "CSS");
                 break;
             case 1:
-                h2Text.textContent = "Figma";
+                changeText(h2Text, "Figma");
                 break;
             case 2:
-                h2Text.textContent = "Git";
+                changeText(h2Text, "Git");
                 break;
             case 3:
-                h2Text.textContent = "GitHub";
+                changeText(h2Text, "GitHub");
                 break;
             case 4:
-                h2Text.textContent = "Chrome DevTools";
+                changeText(h2Text, "Chrome DevTools");
                 break;
             case 5:
-                h2Text.textContent = "HTML";
+                changeText(h2Text, "HTML");
                 break;
             case 6:
-                h2Text.textContent = "JavaScript";
+                changeText(h2Text, "JavaScript");
                 break;
             case 7:
-                h2Text.textContent = "Linux";
+                changeText(h2Text, "Linux");
                 break;
             case 8:
-                h2Text.textContent = "Node.js";
+                changeText(h2Text, "Node.js");
                 break;
             case 9:
-                h2Text.textContent = "NPM";
+                changeText(h2Text, "NPM");
                 break;
             case 10:
-                h2Text.textContent = "Terminal - Bash";
+                changeText(h2Text, "Bash Terminal");
                 break;
             case 11:
-                h2Text.textContent = "Accesibility";
+                changeText(h2Text, "Accesibility");
                 break;
             case 12:
-                h2Text.textContent = "VSCode";
+                changeText(h2Text, "VSCode");
                 break;
             case 13:
-                h2Text.textContent = "Windows";
+                changeText(h2Text, "Windows");
                 break;
             default:
                 h2Text.textContent = "Skills";
@@ -143,6 +153,12 @@ bubbles.forEach((elem, index) => {
         }
     });
     elem.addEventListener("mouseleave", () => {
-        h2Text.textContent = "SKILLS";
+        h2Text.style.filter = "blur(100px)";
+        setTimeout(() => {
+            h2Text.textContent = "SKILLS"
+        }, 100);
+        setTimeout(() => {
+            h2Text.style.filter = "blur(0px)"
+        }, 200);
     });
 });
