@@ -90,3 +90,59 @@ observeElement(hexagonOne, hexagonOneShows);
 observeElement(hexagonTwo, hexagonTwoShows);
 observeElement(hexagonThree, hexagonThreeShows);
 observeElement(skillMaster, bubblesOnScreen);
+
+const h2Text = document.querySelector(".skill-namer");
+bubbles.forEach((elem, index) => {
+    elem.addEventListener("mouseover", () => {
+        switch (index) {
+            case 0:
+                h2Text.textContent = "CSS";
+                break;
+            case 1:
+                h2Text.textContent = "Figma";
+                break;
+            case 2:
+                h2Text.textContent = "Git";
+                break;
+            case 3:
+                h2Text.textContent = "GitHub";
+                break;
+            case 4:
+                h2Text.textContent = "Chrome DevTools";
+                break;
+            case 5:
+                h2Text.textContent = "HTML";
+                break;
+            case 6:
+                h2Text.textContent = "JavaScript";
+                break;
+            case 7:
+                h2Text.textContent = "Linux";
+                break;
+            case 8:
+                h2Text.textContent = "Node.js";
+                break;
+            case 9:
+                h2Text.textContent = "NPM";
+                break;
+            case 10:
+                h2Text.textContent = "Terminal - Bash";
+                break;
+            case 11:
+                h2Text.textContent = "Accesibility";
+                break;
+            case 12:
+                h2Text.textContent = "VSCode";
+                break;
+            case 13:
+                h2Text.textContent = "Windows";
+                break;
+            default:
+                h2Text.textContent = "Skills";
+                break;
+        }
+    })
+    elem.addEventListener("mouseleave", () => {
+        h2Text.textContent = "SKILLS";
+    })
+})

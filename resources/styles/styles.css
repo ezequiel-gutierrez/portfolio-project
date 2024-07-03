@@ -473,6 +473,7 @@ section.selected-projects {
 }
 
 .bubbles {
+    z-index: 9;
     height: inherit;
     width: inherit;
     position: absolute;
