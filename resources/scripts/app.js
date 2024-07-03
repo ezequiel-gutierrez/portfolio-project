@@ -63,9 +63,11 @@ const hexagonThreeShows = new IntersectionObserver((entries) => {
 const bubblesOnScreen = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            bubbles.forEach((element) => element.classList.remove("hide-bubbles"));
+            entry.target.classList.add("showtime");
+            bubbles.forEach((element) => element.classList.add("bubbles-showing"));
         } else {
-            bubbles.forEach((element) => element.classList.add("hide-bubbles"));
+            entry.target.classList.remove("showtime");
+            bubbles.forEach((element) => element.classList.remove("bubbles-showing"));
         }
     });
 });
@@ -90,54 +92,3 @@ observeElement(hexagonOne, hexagonOneShows);
 observeElement(hexagonTwo, hexagonTwoShows);
 observeElement(hexagonThree, hexagonThreeShows);
 observeElement(skillMaster, bubblesOnScreen);
-
-function generateTimer() {
-    let newTimer = Math.random()*4;
-    newTimer += "s"
-    return newTimer
-}
-
-function getThatMatrix(elementToCatch) {
-    console.log("We started working!")
-    const elementMatrix = window.getComputedStyle(elementToCatch).transform;
-    const matrix = elementMatrix.match(/matrix.*\((.+)\)/);
-    
-    if (matrix) {
-        const value = matrix[1].split(", ");
-        const coordX = parseFloat(value[4]);
-        const coordY = parseFloat(value[5]);
-        
-        return { coordX, coordY };
-    }
-    
-    return "If you see this message, let me tell you that it didn't work... poor you :')"
-}
-
-function generateKeyframe(theElement) {
-    const coordinates = getThatMatrix(theElement);
-    console.log("Now its time to generate the keyframe");
-    const bubbleKeyframe = `
-        @keyframes bubbles {
-            0% {
-                transform: translate(${coordinates.coordX}%, ${coordinates.coordY}%) scale(1);
-            }
-
-            25% {
-                transform: translate(${coordinates.coordX}%, ${coordinates.coordY}%) scale(1.1);
-            }
-
-            75% {
-                transform: translate(${coordinates.coordX}%, ${coordinates.coordY}%) scale(0.95);
-            }
-
-            100% {
-                transform: translate(${coordinates.coordX}%, ${coordinates.coordY}%) scale(1);
-            }
-        }`;
-    console.log(`Done, the keyframe is ${bubbleKeyframe}`);
-    return bubbleKeyframe;
-}
-
-bubbles.forEach((element) => {
-    generateKeyframe(element);
-});

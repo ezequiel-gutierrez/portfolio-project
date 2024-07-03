@@ -470,7 +470,12 @@ section.selected-projects {
     1px  1px 0 rgb(175, 53, 0);
     letter-spacing: 1px;
     user-select: none;
-    /* opacity: 0; */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.showtime {
+    opacity: 1;
 }
 
 .bubbles {
@@ -493,8 +498,9 @@ section.selected-projects {
     padding: 1.4rem;
     border-radius: 50%;
     background-color: rgb(228, 73, 7);
-    opacity: 1;
-    transition: opacity 1.5s ease-out 0.25s, transform 1.5s ease-out 0.25s;
+    opacity: 0;
+    transform: translate(0, 0);
+    transition: opacity 1.5s ease-out var(--delay), transform 1.5s ease-out 0.25s;
 }
 
 .technology-bubble img {
@@ -503,78 +509,106 @@ section.selected-projects {
 }
 
 .bubbles .technology-bubble:nth-child(1) {
-    transform: translate(-523%, -223%);
+    --x: -380%;
+    --y: 0%;
+    --delay: 0s;
     /* CSS */
 }
 
 .bubbles .technology-bubble:nth-child(2) {
-    transform: translate(610%, 233%);
+    --x: 480%;
+    --y: -160%;
+    --delay: 0.65s;
     /* figma */
 }
 
 .bubbles .technology-bubble:nth-child(3) {
-    transform: translate(-460%, 20%);
+    --x: -480%;
+    --y: 160%;
+    --delay: 0.65s;
     /* git */
 }
 
 .bubbles .technology-bubble:nth-child(4) {
-    transform: translate(325%, -150%);
+    --x: 270%;
+    --y: -240%;
+    --delay: 0.45s;
     /* github */
 }
 
 .bubbles .technology-bubble:nth-child(5) {
-    transform: translate(-610%, -90%);
+    --x: 480%;
+    --y: 160%;
+    --delay: 0.65s;
     /* Chrome */
 }
 
 .bubbles .technology-bubble:nth-child(6) {
-    transform: translate(100%, 280%);
+    --x: -270%;
+    --y: -240%;
+    --delay: 0.45s;
     /* html */
 }
 
 .bubbles .technology-bubble:nth-child(7) {
-    transform: translate(-570%, 260%);
+    --x: -270%;
+    --y: 240%;
+    --delay: 0.45s;
     /* javascript */
 }
 
 .bubbles .technology-bubble:nth-child(8) {
-    transform: translate(550%, -75%);
+    --x: 630%;
+    --y: 300%;
+    --delay: 1.2s;
     /* linux */
 }
 
 .bubbles .technology-bubble:nth-child(9) {
-    transform: translate(-310%, -125%);
+    --x: 380%;
+    --y: 0%;
+    --delay: 0s;
     /* node */
 }
 
 .bubbles .technology-bubble:nth-child(10) {
-    transform: translate(360%, 290%);
+    --x: 270%;
+    --y: 240%;
+    --delay: 0.45s;
     /* npm */
 }
 
 .bubbles .technology-bubble:nth-child(11) {
-    transform: translate(-326%, 226%);
+    --x: 630%;
+    --y: 0%;
+    --delay: 1s;
     /* terminal */
 }
 
 .bubbles .technology-bubble:nth-child(12) {
-    transform: translate(600%, -260%);
+    --x: -630%;
+    --y: 300%;
+    --delay: 1.2s;
     /* accesible */
 }
 
 .bubbles .technology-bubble:nth-child(13) {
-    transform: translate(-170%, -240%);
+    --x: -480%;
+    --y: -160%;
+    --delay: 0.65s;
     /* vscode */
 }
 
 .bubbles .technology-bubble:nth-child(14) {
-    transform: translate(380%, 50%);
+    --x: -630%;
+    --y: 0%;
+    --delay: 1s;
     /* windows */
 }
 
-.bubbles .hide-bubbles:nth-child(-n+14) {
-    opacity: 0;
-    transform: translate(50%, 50%);
+.bubbles-showing {
+    opacity: 1;
+    animation: scale 4.5s ease-in-out var(--delay) infinite;
 }
 
 /* Keyframes Area */
@@ -693,22 +727,18 @@ section.selected-projects {
 
 /* Keyframes for technologies */
 
-@keyframes bobbing {
+@keyframes scale {
     
     0% {
-        transform: scale(1);
+        transform: translate(var(--x), var(--y)) scale(1);
     }
 
-    25% {
-        transform: scale(1.1);
-    }
-
-    75% {
-        transform: scale(0.95);
+    50% {
+        transform: translate(var(--x), var(--y)) scale(0.9);
     }
 
     100% {
-        transform: scale(1);
+        transform: translate(var(--x), var(--y)) scale(1);
     }
 
 }
