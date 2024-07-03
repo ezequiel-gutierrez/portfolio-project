@@ -63,10 +63,8 @@ const hexagonThreeShows = new IntersectionObserver((entries) => {
 const bubblesOnScreen = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add("showtime");
             bubbles.forEach((element) => element.classList.add("bubbles-showing"));
         } else {
-            entry.target.classList.remove("showtime");
             bubbles.forEach((element) => element.classList.remove("bubbles-showing"));
         }
     });

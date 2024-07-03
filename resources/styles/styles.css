@@ -470,12 +470,6 @@ section.selected-projects {
     1px  1px 0 rgb(175, 53, 0);
     letter-spacing: 1px;
     user-select: none;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.showtime {
-    opacity: 1;
 }
 
 .bubbles {
@@ -499,7 +493,6 @@ section.selected-projects {
     border-radius: 50%;
     background-color: rgb(228, 73, 7);
     opacity: 0;
-    transform: translate(0, 0);
     transition: opacity 1.5s ease-out var(--delay), transform 1.5s ease-out 0.25s;
 }
 
