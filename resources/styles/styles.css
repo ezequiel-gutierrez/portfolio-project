@@ -447,7 +447,6 @@ section.selected-projects {
     width: 100vw;
     height: 110vh;
     position: relative;
-    border: dashed medium yellow;
 }
 
 .the-skill-master {
