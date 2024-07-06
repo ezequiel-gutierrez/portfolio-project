@@ -447,6 +447,8 @@ section.selected-projects {
     width: 100vw;
     height: 110vh;
     position: relative;
+    padding-bottom: 6rem;
+    background-color: rgb(255, 255, 255);
 }
 
 .the-skill-master {
@@ -607,6 +609,117 @@ section.selected-projects {
 .bubbles-showing {
     opacity: 1;
     animation: scale 4.5s ease-in-out var(--delay) infinite;
+}
+
+/* Footer final-cta */
+
+footer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    border-top: solid 0.5rem rgb(212, 69, 8);
+    overflow: hidden;
+}
+
+footer > h2 {
+    padding: 12rem 0 2.5rem;
+    letter-spacing: 2px;
+    color: rgb(212, 69, 8);
+    font-size: 3rem;
+}
+
+footer > a {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21.875rem;
+    height: 5.9375rem;
+    margin-top: 1.3675rem;
+    font-weight: 500;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 500px;
+    border: solid 0.3125rem rgb(212, 69, 8);
+    color: rgb(212, 69, 8);
+    background-color: rgb(240, 240, 240);
+    -webkit-user-drag: none;
+    transition: all 0.25s ease-out;
+}
+
+footer > a:hover {
+    border: solid .3125rem rgb(240, 240, 240);
+    background-color: rgb(212, 69, 8);
+    color: rgb(240, 240, 240);
+}
+
+.footer-shapes {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    bottom: 0;
+    mix-blend-mode: exclusion;
+}
+
+.footer-shapes img:nth-child(1) {
+    position: absolute;
+    left: 46%;
+    top: 1rem;
+    width: 5rem;
+    height: 5rem;
+    animation: pentagon-two 62.5s ease-in-out 0.5s infinite;
+}
+
+.footer-shapes img:nth-child(2) {
+    position: absolute;
+    right: 1.75rem;
+    bottom: 0rem;
+    width: 12rem;
+    height: 12rem;
+    animation: circle-movement 11s linear 0s infinite alternate;
+}
+
+.footer-shapes img:nth-child(3) {
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    width: 18rem;
+    height: 18rem;
+    animation: square-two 15s linear 0s infinite alternate;    
+}
+
+.footer-shapes img:nth-child(4) {
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+    width: 18rem;
+    height: 18rem;
+    transform-origin: 58% 58%;
+    animation: triangle-movement 21s linear 0s infinite alternate;
+}
+
+.footer-shapes img:nth-child(5) {
+    position: absolute;
+    left: 1.6875rem;
+    top: 1.8765rem;
+    width: 11rem;
+    height: 11rem;
+    animation: square-one 18s ease-in-out 0s infinite alternate;
+}
+
+.footer-shapes img:nth-child(6) {
+    position: absolute;
+    left: 45%;
+    bottom: 2.6875rem;
+    width: 7rem;
+    height: 7rem;
+    animation: pentagon-one 37.5s linear 0s infinite;
 }
 
 /* Keyframes Area */
