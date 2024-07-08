@@ -1,0 +1,131 @@
+/* Keyframes Area */
+
+/* Keyframes for hero */
+@keyframes hero-text-falls-in-place {
+    0% {
+
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes cta-fade-in {
+    0% {
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes triangle-movement {
+    0% {
+        
+    }
+    100% {
+        transform: translate(100%, -30%) scale(0.45) rotate(180deg);
+    }
+}
+
+@keyframes circle-movement {
+    0% {
+
+    }
+
+    100% {
+        transform: translate(-30%, -40%) scale(1.3);
+    }
+}
+
+@keyframes square-one {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: translate(50%, 60%) rotate(235deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(555deg);
+    }
+}
+
+@keyframes square-two {
+    0% {
+        transform: rotate(45deg);
+    }
+    
+    100% {
+        transform: translate(-20%, 20%) rotate(-500deg) scale(0.65);
+    }
+}
+
+@keyframes pentagon-two {
+    0% {
+
+    }
+
+    25% {
+        transform: translate(-350%, 90%) rotate(-360deg);
+    }
+
+    75% {
+        transform: translate(400%, 50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+}
+
+@keyframes pentagon-one {
+    0% {
+
+    }
+
+    25% {
+        transform: translate(65%, -150%) rotate(-95deg);
+    }
+
+    75% {
+        transform: translate(150%, 60%) rotate(94deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+}
+
+/* Keyframes for second section */
+
+@keyframes hexagons-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Keyframes for technologies */
+
+@keyframes scale {
+    
+    0% {
+        transform: translate(var(--x), var(--y)) scale(1);
+    }
+
+    50% {
+        transform: translate(var(--x), var(--y)) scale(0.9);
+    }
+
+    100% {
+        transform: translate(var(--x), var(--y)) scale(1);
+    }
+
+}
