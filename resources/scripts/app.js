@@ -136,10 +136,10 @@ bubbles.forEach((elem, index) => {
                 changeText(h2Text, "NPM");
                 break;
             case 10:
-                changeText(h2Text, "Bash Terminal");
+                changeText(h2Text, "Accesibility");
                 break;
             case 11:
-                changeText(h2Text, "Accesibility");
+                changeText(h2Text, "Bash Terminal");
                 break;
             case 12:
                 changeText(h2Text, "VSCode");
