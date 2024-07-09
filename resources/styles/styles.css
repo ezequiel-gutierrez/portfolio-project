@@ -584,14 +584,14 @@ section.selected-projects {
     --x: 630%;
     --y: 0%;
     --delay: 1s;
-    /* terminal */
+    /* accessibility */
 }
 
 .bubbles .technology-bubble:nth-child(12) {
     --x: -630%;
     --y: 300%;
     --delay: 1.2s;
-    /* accesible */
+    /* bash */
 }
 
 .bubbles .technology-bubble:nth-child(13) {
@@ -744,9 +744,448 @@ footer > a:hover {
 
 /* 640 x 1135 */
 
-/* 480 x 800 */
+/* Down to 481px */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    /* Hero starts here */
 
-/* 365 x 677 */
+    header, main, footer {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 2rem;
+        padding: 0;
+        margin-top: 2.5rem;
+    }
+
+    .cta-hero {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem 0;
+    }
+
+    .geometrical-shapes, .geometrical-shapes img {
+        mix-blend-mode: color-burn;
+    }
+
+    .geometrical-shapes img:nth-child(4), .geometrical-shapes img:nth-child(2), .geometrical-shapes img:nth-child(3) {
+        display: none;
+    }
+
+    
+    /* Skills and infor start here */
+
+    .skills-n-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.5rem;
+        background-color: transparent;
+        gap: 2.5rem 0;
+        height: max-content;
+    }
+    
+    .hexagon-shape {
+        display: block;
+        position: unset;
+        width: 16rem;
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: all 0s;
+    }
+    
+    .text-container {
+        transition: opacity 0.75s ease;
+    }
+    
+    .icon {
+        transition: opacity 0.75s ease;
+    }
+
+    .bg-left-hexagons, .bg-right-hexagons {
+        display: none;
+    }
+
+    /* Selected projects start here */
+
+    .project-container {
+        width: 350px;
+    }
+
+    .project-container:nth-child(4) h3.project-title::after {
+        display: none;
+    }
+
+    .project-container:nth-child(4) h3 {
+        width: 100%;
+    }
+
+    .project-container:hover .hover-shape-1 {
+        transform: translate(40%, -130%) scale(1.35) rotate(25deg);
+    }
+    
+    .project-container:hover .hover-shape-2 {
+        transform: translate(-160%, -40%) scale(1.22) rotate(65deg);
+    }
+    
+    .project-container:hover .hover-shape-3 {
+        transform: translate(50%, 42%) scale(1.22) rotate(25deg);
+    }
+    
+    /* Skill Showcase starts here */
+    
+    .skill-showcase {
+        overflow: hidden;
+        width: 100%;
+        height: max-content;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+    .the-skill-master {
+        display: none;
+    }
+
+    .bubbles {
+        position: unset;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .bubbles-showing {
+        animation: none;
+    }
+
+    .technology-bubble {
+        position: relative;
+        opacity: 1;
+    }
+
+    .technology-bubble::before {
+        text-align: center;
+    }
+
+    .technology-bubble:nth-child(1)::before {
+        z-index: -1;
+        content: "CSS";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(1):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(2)::before {
+        z-index: -1;
+        content: "Figma";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(2):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(3)::before {
+        z-index: -1;
+        content: "Git";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(3):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(4)::before {
+        z-index: -1;
+        content: "GitHub";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(4):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(5)::before {
+        z-index: -1;
+        content: "Chrome DevTools";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(5):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 60%);
+    }
+
+    .technology-bubble:nth-child(6)::before {
+        z-index: -1;
+        content: "HTML";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(6):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(7)::before {
+        z-index: -1;
+        content: "JavaScript";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(7):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(8)::before {
+        z-index: -1;
+        content: "Linux";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(8):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(9)::before {
+        z-index: -1;
+        content: "Node.js";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(9):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(10)::before {
+        z-index: -1;
+        content: "NPM";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(10):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(11)::before {
+        z-index: -1;
+        content: "Accessibility";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(11):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(12)::before {
+        z-index: -1;
+        content: "Bash";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(12):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(13)::before {
+        z-index: -1;
+        content: "VSCode";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(13):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(14)::before {
+        z-index: -1;
+        content: "Windows";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(14):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    /* Footer starts here */
+
+    footer {
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .footer-shapes, .footer-shapes img {
+        mix-blend-mode: color-burn;
+    }
+
+    .footer-shapes img:nth-child(2), .footer-shapes img:nth-child(3) {
+        display: none;
+    }
+
+    .footer-shapes img:nth-child(1) {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+}
+
+/* Up to 480px */
 @media screen and (max-width: 480px) {
 
     /* Hero section starts here */
@@ -840,7 +1279,7 @@ footer > a:hover {
     }
     
     .project-container:hover .hover-shape-2 {
-        transform: translate(-160%, -40%) scale(1.22) rotate(65deg);
+        transform: translate(-160%, -40%) scale(1.2) rotate(65deg);
     }
     
     .project-container:hover .hover-shape-3 {
@@ -851,7 +1290,7 @@ footer > a:hover {
 
     .skill-showcase {
         overflow-y: hidden;
-        /* padding: 5rem 0; */
+        overflow-x: hidden;
     }
 
     .the-skill-master {
