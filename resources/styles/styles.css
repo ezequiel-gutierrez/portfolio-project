@@ -847,351 +847,351 @@ footer > a:hover {
         transform: translate(35%, 40%) scale(1.1) rotate(25deg);
     }
     
-/* Skill Showcase starts here */
+    /* Skill Showcase starts here */
 
-.skill-showcase {
-    overflow-y: hidden;
-    /* padding: 5rem 0; */
-}
+    .skill-showcase {
+        overflow-y: hidden;
+        /* padding: 5rem 0; */
+    }
 
-.the-skill-master {
-    display: none;
-}
+    .the-skill-master {
+        display: none;
+    }
 
-.bubbles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0.85rem 0;
-    gap: 0 2rem;
-    margin: 4rem 0;
-}
+    .bubbles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0.85rem 0;
+        gap: 0 2rem;
+        margin: 4rem 0;
+    }
 
-.technology-bubble {
-    z-index: 10;
-    position: relative;
-    opacity: 1;
-    transition: all 0s;
-}
+    .technology-bubble {
+        z-index: 10;
+        position: relative;
+        opacity: 1;
+        transition: all 0s;
+    }
 
-.technology-bubble::before {
-    text-align: center;
-}
+    .technology-bubble::before {
+        text-align: center;
+    }
 
-.technology-bubble:nth-child(1)::before {
-    z-index: -1;
-    content: "CSS";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(1)::before {
+        z-index: -1;
+        content: "CSS";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(1):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(1):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(2)::before {
-    z-index: -1;
-    content: "Figma";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(2)::before {
+        z-index: -1;
+        content: "Figma";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(2):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(2):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(3)::before {
-    z-index: -1;
-    content: "Git";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(3)::before {
+        z-index: -1;
+        content: "Git";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(3):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(3):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(4)::before {
-    z-index: -1;
-    content: "GitHub";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(4)::before {
+        z-index: -1;
+        content: "GitHub";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(4):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(4):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(5)::before {
-    z-index: -1;
-    content: "Chrome DevTools";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    text-align: center;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(5)::before {
+        z-index: -1;
+        content: "Chrome DevTools";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(5):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 60%);
-}
+    .technology-bubble:nth-child(5):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 60%);
+    }
 
-.technology-bubble:nth-child(6)::before {
-    z-index: -1;
-    content: "HTML";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(6)::before {
+        z-index: -1;
+        content: "HTML";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(6):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(6):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(7)::before {
-    z-index: -1;
-    content: "JavaScript";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(7)::before {
+        z-index: -1;
+        content: "JavaScript";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(7):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(7):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(8)::before {
-    z-index: -1;
-    content: "Linux";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(8)::before {
+        z-index: -1;
+        content: "Linux";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(8):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(8):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(9)::before {
-    z-index: -1;
-    content: "Node.js";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(9)::before {
+        z-index: -1;
+        content: "Node.js";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(9):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(9):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(10)::before {
-    z-index: -1;
-    content: "NPM";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(10)::before {
+        z-index: -1;
+        content: "NPM";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(10):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(10):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(11)::before {
-    z-index: -1;
-    content: "Bash";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(11)::before {
+        z-index: -1;
+        content: "Accessibility";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(11):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(11):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(12)::before {
-    z-index: -1;
-    content: "Accessibility";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(12)::before {
+        z-index: -1;
+        content: "Bash";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(12):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(12):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(13)::before {
-    z-index: -1;
-    content: "VSCode";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(13)::before {
+        z-index: -1;
+        content: "VSCode";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(13):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(13):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-.technology-bubble:nth-child(14)::before {
-    z-index: -1;
-    content: "Windows";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(228, 73, 7);
-    transform: translate(-50%, -50%);
-    transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-}
+    .technology-bubble:nth-child(14)::before {
+        z-index: -1;
+        content: "Windows";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
 
-.technology-bubble:nth-child(14):hover::before {
-    opacity: 1;
-    transform: translate(-50%, 150%);
-}
+    .technology-bubble:nth-child(14):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
 
-/* Footer starts here */
+    /* Footer starts here */
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 2.5rem 0;
-}
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2.5rem 0;
+    }
 
-footer > h2 {
-    padding: 0;
-    margin: 0;
-}
+    footer > h2 {
+        padding: 0;
+        margin: 0;
+    }
 
-.footer-shapes img:nth-child(4),
-.footer-shapes img:nth-child(5) {
-    display: none;
-}
+    .footer-shapes img:nth-child(4),
+    .footer-shapes img:nth-child(5) {
+        display: none;
+    }
 
-.footer-shapes img:nth-child(1) {
-    width: 10rem;
-    height: 10rem;
-}
+    .footer-shapes img:nth-child(1) {
+        width: 10rem;
+        height: 10rem;
+    }
 
-.footer-shapes img:nth-child(2) {
-    left: 20%;
-}
+    .footer-shapes img:nth-child(2) {
+        left: 20%;
+    }
 
-.footer-shapes, .footer-shapes img {
-    mix-blend-mode: color-burn;
-}
+    .footer-shapes, .footer-shapes img {
+        mix-blend-mode: color-burn;
+    }
 
 }
