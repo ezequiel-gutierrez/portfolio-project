@@ -742,7 +742,373 @@ footer > a:hover {
 
 /* 720 x 1280 */
 
-/* 640 x 1135 */
+/* 769 x 1024 */
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    
+    /* Hero starts here */
+
+    header, main, footer {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    hero, .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .geometrical-shapes, .geometrical-shapes img {
+        mix-blend-mode: color-burn;
+    }
+
+    .geometrical-shapes img:nth-child(2) {
+        display: none;
+    }
+
+    /* Skills n info start here */
+
+    .bg-left-hexagons, .bg-right-hexagons {
+        display: none;
+    }
+
+    /* Skill showcase starts here */
+
+    .skill-showcase {
+        overflow: hidden;
+        width: 100%;
+        height: max-content;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2.5rem;
+    }
+
+    .the-skill-master {
+        display: none;
+    }
+
+    .bubbles {
+        position: unset;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 4rem;
+        gap: 2.5rem;
+    }
+
+    .bubbles-showing {
+        animation: none;
+    }
+
+    .technology-bubble {
+        margin-bottom: 0.75rem;
+        position: relative;
+        opacity: 1;
+    }
+
+    .technology-bubble::before {
+        text-align: center;
+    }
+
+    .technology-bubble:nth-child(1)::before {
+        z-index: -1;
+        content: "CSS";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(1):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(2)::before {
+        z-index: -1;
+        content: "Figma";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(2):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(3)::before {
+        z-index: -1;
+        content: "Git";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(3):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(4)::before {
+        z-index: -1;
+        content: "GitHub";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(4):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(5)::before {
+        z-index: -1;
+        content: "DevTools";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(5):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(6)::before {
+        z-index: -1;
+        content: "HTML";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(6):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(7)::before {
+        z-index: -1;
+        content: "JavaScript";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(7):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(8)::before {
+        z-index: -1;
+        content: "Linux";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(8):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(9)::before {
+        z-index: -1;
+        content: "Node.js";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(9):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(10)::before {
+        z-index: -1;
+        content: "NPM";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(10):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(11)::before {
+        z-index: -1;
+        content: "Accessibility";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(11):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(12)::before {
+        z-index: -1;
+        content: "Bash";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(12):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(13)::before {
+        z-index: -1;
+        content: "VSCode";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(13):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    .technology-bubble:nth-child(14)::before {
+        z-index: -1;
+        content: "Windows";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(228, 73, 7);
+        transform: translate(-50%, -50%);
+        transition: transform 0.45s ease-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+    }
+
+    .technology-bubble:nth-child(14):hover::before {
+        opacity: 1;
+        transform: translate(-50%, 150%);
+    }
+
+    /* Footer starts here */
+
+    .footer-shapes, .footer-shapes img {
+        mix-blend-mode: color-burn;
+    }
+
+    .footer-shapes img:nth-child(6) {
+        display: none;
+    }
+
+}
 
 /* Down to 481px */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -874,6 +1240,7 @@ footer > a:hover {
     }
 
     .technology-bubble {
+        margin-bottom: 0.75rem;
         position: relative;
         opacity: 1;
     }
@@ -964,7 +1331,7 @@ footer > a:hover {
 
     .technology-bubble:nth-child(5)::before {
         z-index: -1;
-        content: "Chrome DevTools";
+        content: "DevTools";
         position: absolute;
         top: 50%;
         left: 50%;
@@ -980,7 +1347,7 @@ footer > a:hover {
 
     .technology-bubble:nth-child(5):hover::before {
         opacity: 1;
-        transform: translate(-50%, 60%);
+        transform: translate(-50%, 150%);
     }
 
     .technology-bubble:nth-child(6)::before {
