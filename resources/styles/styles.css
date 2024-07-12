@@ -741,10 +741,12 @@ footer > a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 2.5rem;
     }
 
     .hero-text {
         mix-blend-mode: color-burn;
+        padding: 0;
     }
 
     .cta-hero {
