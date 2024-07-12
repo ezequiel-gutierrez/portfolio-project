@@ -96,7 +96,6 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    mix-blend-mode: exclusion;
 }
 
 .geometrical-shapes img {
@@ -726,25 +725,104 @@ footer > a:hover {
 
 /* Media Queries */
 
-/* 4K Screens*/
+/* 1360 and above */
 
-/* 1920 x 1080 */
+@media only screen and (min-width: 1361px) {
 
-/* 1600 x 900 */
+    /* Hero starts here */
 
-/* 1024 x 720*/
+    header, main, footer {
+        width: 100vw;
+        overflow-x: hidden;
+    }
 
-@media only screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-text {
+        mix-blend-mode: color-burn;
+    }
+
+    .cta-hero {
+        display: flex;
+        gap: 8rem;
+    }
+
+    .geometrical-shapes, .geometrical-shapes img {
+        z-index: -1;
+        mix-blend-mode: color-burn;
+    }
     
+    /* Skills n info starts here */
+
+    .hexagon-shape {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container {
+        z-index: 10;
+        position: unset;
+        width: 100%;
+        aspect-ratio: 1/1;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(240, 240, 240);
+        transition: opacity 0.5s ease 2.2s;
+    }
+
+    /* Selected projects start here */
+
+    .showcase-projects-body {
+        width: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    /* Skill showcase starts here */
+
+    .the-skill-master {
+        width: 24rem;
+        height: 24rem;
+        border-radius: 999999px;
+    }
+
+    /* Footer starts here */
+
+    .final-cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .footer-shapes, .footer-shapes img {
+        mix-blend-mode: color-burn;
+    }
+
+    footer h2, footer a {
+        padding: 0;
+    }
+
 }
 
-/*  1024 x 720 (Vertical)*/
+/* 769 x 1360 */
 
-/* 720 x 1280 */
-
-/* 769 x 1024 */
-
-@media only screen and (min-width:769px) and (max-width: 1024px) {
+@media only screen and (min-width:769px) and (max-width: 1360px) {
     
     /* Hero starts here */
 
