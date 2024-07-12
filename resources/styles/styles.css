@@ -750,7 +750,10 @@ footer > a:hover {
     }
 
     .cta-hero {
+        margin-top: 2.5%;
+        width: inherit;
         display: flex;
+        justify-content: center;
         gap: 8rem;
     }
 
@@ -761,16 +764,29 @@ footer > a:hover {
     
     /* Skills n info starts here */
 
+    .skills-n-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     .hexagon-shape {
+        position: static;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    .hexagon1-coming-down, .hexagon2-coming-down, .hexagon3-coming-up, .hexagon-container1, .hexagon-container2, .hexagon-container3, .hexagon-shape {
+        position: static;
+        transform: translate(0, 0);
+    }
+
     .text-container {
         z-index: 10;
-        position: unset;
+        position: static;
         width: 100%;
         aspect-ratio: 1/1;
         padding: 2.5rem;
@@ -791,7 +807,10 @@ footer > a:hover {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 8rem;
+    }
+
+    .project-container {
+        margin: 2.5%;
     }
 
     /* Skill showcase starts here */
