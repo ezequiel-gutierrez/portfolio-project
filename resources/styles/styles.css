@@ -2106,6 +2106,8 @@ footer > a:hover {
 
 }
 
+/* Landscape mode */
+
 @media only screen and (max-width: 844px) and (orientation: landscape) {
 
     header, section, footer {
@@ -2147,4 +2149,103 @@ footer > a:hover {
     footer a {
         margin-bottom: 10%;
     }
+}
+
+/* Old (EXTRA SMALL) Iphone screens... ye- This is the actual title of this media query, enjoy! */
+
+@media only screen and (max-width: 375px) {
+
+    header, section, footer {
+        height: max-content;
+        min-height: fit-content;
+    }
+
+    .hero-text {
+        padding-top: 4.25rem;
+        padding-bottom: 1.24500;
+        font-size: 1.75rem;
+    }
+
+    .cta-hero {
+        margin-top: 0;
+    }
+
+    .cta-hero a {
+        width: 14.583rem;
+        height: 3.9583rem;
+        font-size: 1.3rem;
+        border: solid 0.2083rem rgb(212, 69, 8);
+    }
+
+    .bg-left-hexagons, .bg-right-hexagons {
+        display: none;
+    }
+
+    .skills-n-info {
+        gap: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .hexagon-shape {
+        transform: scale(0.75);
+    }
+
+    .project-container {
+        width: 250px;
+    }
+
+    .selected-projects {
+        margin-bottom: 0;
+    }
+    
+    .selected-projects > h2 {
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+
+    .skill-showcase {
+        height: calc(100vh + 50rem);
+        min-height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .bubbles {
+        margin: 0;
+        margin-top: 2rem;
+        height: calc(100vh + 50rem);
+        align-items: baseline;
+        gap: 0.25rem 1.75rem;
+    }
+
+    footer {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer h2 {
+        font-size: 2rem;
+    }
+
+    footer a {
+        width: 14.583rem;
+        height: 3.9583rem;
+        font-size: 1.3rem;
+        border: solid 0.2083rem rgb(212, 69, 8);
+    }
+
+    .footer-shapes img:nth-child(1), .footer-shapes img:nth-child(6) {
+        display: none;
+    }
+
+    .footer-shapes img:nth-child(2) {
+        width: 8rem;
+        height: 8rem;
+    }
+
 }
