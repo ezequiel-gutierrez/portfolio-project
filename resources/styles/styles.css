@@ -757,6 +757,10 @@ footer > a:hover {
         gap: 8rem;
     }
 
+    .cta-hero a {
+        margin: 0 1%;
+    }
+
     .geometrical-shapes, .geometrical-shapes img {
         z-index: -1;
         mix-blend-mode: color-burn;
@@ -777,6 +781,7 @@ footer > a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 0.5%;
     }
 
     .hexagon1-coming-down, .hexagon2-coming-down, .hexagon3-coming-up, .hexagon-container1, .hexagon-container2, .hexagon-container3, .hexagon-shape {
@@ -2099,4 +2104,47 @@ footer > a:hover {
         mix-blend-mode: color-burn;
     }
 
+}
+
+@media only screen and (max-width: 844px) and (orientation: landscape) {
+
+    header, section, footer {
+        height: fit-content;
+        min-height: fit-content;
+    }
+
+    .geometrical-shapes img:nth-child(1), .geometrical-shapes img:nth-child(2), .geometrical-shapes img:nth-child(6) {
+        display: none;
+    }
+
+    header {
+        margin-bottom: 10%;
+    }
+
+    .skills-n-info {
+        display: flex;
+        justify-content: center;
+        gap: 2% 0;
+        align-items: center;
+    }
+
+    .hexagon-shape {
+        display: block;
+        position: static;
+        transform: translate(0, 0);
+        transition: transform 0s;
+        opacity: 1;
+    }
+
+    .text-container, .icon {
+        transition: opacity 0.5s ease 1s;
+    }
+
+    footer h2 {
+        padding-top: 10%;
+    }
+
+    footer a {
+        margin-bottom: 10%;
+    }
 }
