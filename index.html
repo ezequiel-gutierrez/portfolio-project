@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./resources/favicon/icon-2.svg" type="image/x-icon">
     <link rel="stylesheet" href="./resources/styles/styles.css">
+    <link rel="stylesheet" href="./resources/styles/keyframes.css">
     <title>Welcome to my portfolio!</title>
+    <script src="./resources/scripts/app.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,8 +19,8 @@
             <h2>I'm a front-end developer</h2>
         </section>
         <section class="cta-hero">
-            <a href="">Contact Me</a>
-            <a href="">See More</a>
+            <a href="./contact.html">Contact Me</a>
+            <a href="#btn-see-more">See More</a>
         </section>
 
         <div class="geometrical-shapes">
@@ -31,10 +33,248 @@
         </div>
     </header>
     <main>
-        
-    </main>
-    <footer>
+        <section class="skills-n-info">
+            <div class="bg-left-hexagons">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+            </div>
+            <div class="bg-right-hexagons">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+                <img src="./resources/svg/hexagon.svg" alt="" class="bg-hexagon">
+            </div>
+            <div class="hexagon-shape hexagon-container1">
+                <img src="./resources/svg/hexagon.svg" alt="Hexagon Shape" class="hexagon">
+                <div class="icon-container">
+                    <img src="./resources/svg/code-icon.svg" alt="Icon" class="icon">
+                </div>
+                <div class="text-container">
+                    <h3>
+                        JavaScript
+                    </h3>
+                    <p>
+                        I <span class="get-bold">code</span> dynamic experiences, ensuring websites always feel alive.
+                    </p>
+                </div>
+            </div>
+            <div class="hexagon-shape hexagon-container2">
+                <img src="./resources/svg/hexagon.svg" alt="Hexagon Shape" class="hexagon">
+                <div class="icon-container">
+                    <img src="./resources/svg/ui-design-icon.svg" alt="Icon" class="icon">
+                </div>
+                <div class="text-container">
+                    <h3>
+                        UI/UX Design
+                    </h3>
+                    <p>
+                        I <span class="get-bold">create</span> interesting and user-friendly pages that user can easily navigate
+                    </p>
+                </div>
+            </div>
+            <div class="hexagon-shape hexagon-container3">
+                <img src="./resources/svg/hexagon.svg" alt="Hexagon Shape" class="hexagon">
+                <div class="icon-container">
+                    <img src="./resources/svg/seo-icon.svg" alt="Icon" class="icon">
+                </div>
+                <div class="text-container">
+                    <h3>
+                        SEO
+                    </h3>
+                    <p>
+                        I <span class="get-bold">optimize</span> SEO efficacy to augment web traffic to your page
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="selected-projects">
+            <h2 id="btn-see-more">Selected Projects</h2>
+            <div class="showcase-projects-body">
+                
+                <div class="project-container">
+                    <a href="https://ezequiel-gutierrez.github.io/Codecademy-Repo/flexbox-business-site-starting/index.html" target="_blank">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-1">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-2">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-3">
+                        <div class="image-wrapper">
+                            <img src="./resources/images/toolbox-page.PNG" alt="Image of a showcased project!" class="project-thumbnail">
+                            <h3 class="project-title">Business Site Starting</h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                <span class="get-bold">Description:</span> The purpose of this project was to make a business site main page, and use CSS Flexbox to align items on the page.
+                            </p>
+                            <p>
+                                <span class="get-bold">Technologies:</span> HTML | CSS
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-container">
+                    <a href="https://ezequiel-gutierrez.github.io/page-made-from-bash/" target="_blank">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-1">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-2">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-3">
+                        <div class="image-wrapper">
+                            <img src="./resources/images/bash-page.PNG" alt="Image of a showcased project!" class="project-thumbnail">
+                            <h3 class="project-title">Page made from bash</h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                <span class="get-bold">Description:</span> This project came out as a challenge to myself to code a full working web page from the command line.
+                            </p>
+                            <p>
+                                <span class="get-bold">Technologies:</span> HTML | CSS | JavaScript | Bash
+                            </p>
+                        </div>
+                    </a>
+                </div>
 
+                <div class="project-container">
+                    <a href="https://ezequiel-gutierrez.github.io/tea-cozy/" target="_blank">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-1">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-2">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-3">
+                        <div class="image-wrapper">
+                            <img src="./resources/images/tea-cozy-page.PNG" alt="Image of a showcased project!" class="project-thumbnail">
+                            <h3 class="project-title">Tea Cozy</h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                <span class="get-bold">Description:</span> The goal of the project was to fix the alignment of the page using a spec sheet.
+                            </p>
+                            <p>
+                                <span class="get-bold">Technologies:</span> HTML | CSS
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-container">
+                    <a href="https://ezequiel-gutierrez.github.io/Codecademy-Repo/fotomatic_broken/index.html" target="_blank">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-1">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-2">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-3">
+                        <div class="image-wrapper">
+                            <img src="./resources/images/fotomatic-page.PNG" alt="Image of a showcased project!" class="project-thumbnail">
+                            <h3 class="project-title">Fixing a broken page "Fotomatic"</h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                <span class="get-bold">Description:</span> The goal of the project was to fix the broken page and make it responsive using a spec sheet.
+                            </p>
+
+                            <p>
+                                <span class="get-bold">Technologies:</span> HTML | CSS
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-container">
+                    <a href="https://ezequiel-gutierrez.github.io/Codecademy-Repo/html-css-cheatsheet-starting/index.html" target="_blank">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-1">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-2">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-3">
+                        <div class="image-wrapper">
+                            <img src="./resources/images/cheatsheet-page.PNG" alt="Image of a showcased project!" class="project-thumbnail">
+                            <h3 class="project-title">Code Cheatseet</h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                <span class="get-bold">Description:</span> This project was meant to be an aid to remember and recall keywords and commands in different technologies.
+                            </p>
+                            <p>
+                                <span class="get-bold">Technologies:</span> HTML | CSS
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-container">
+                    <a href="https://ezequiel-gutierrez.github.io/Codecademy-Repo/responsive-club-starting/index.html" target="_blank">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-1">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-2">
+                        <img src="./resources/svg/pentagon.svg" alt="" class="hover-shapes hover-shape-3">
+                        <div class="image-wrapper">
+                            <img src="./resources/images/blooming-shots-page.PNG" alt="Image of a showcased project!" class="project-thumbnail">
+                            <h3 class="project-title">Club starting page</h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                <span class="get-bold">Description:</span> Main page of a club group where images should be responsive to different screen sizes
+                            </p>
+                            <p>
+                                <span class="get-bold">Technologies:</span> HTML | CSS | Figma
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="skill-showcase">
+            <div class="the-skill-master">
+                <h2 class="skill-namer">SKILLS</h2>
+            </div>
+            <div class="bubbles">
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/css3.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/figma.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/git.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/github.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/googlechrome.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/html5.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/js.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/linux.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/nodedotjs.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/npm.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/universal-access-solid.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/terminal-solid.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/visualstudiocode.svg" alt="Floating Bubble">
+                </div>
+                <div class="technology-bubble">
+                    <img src="./resources/svg/technologies/windows10.svg" alt="Floating Bubble">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="final-cta">
+        <h2>Do you like what you see?</h2>
+        <a href="./contact.html">Contact Me</a>
+        <div class="footer-shapes">
+            <img src="./resources/svg/circle.svg" alt="" class="background-shape">
+            <img src="./resources/svg/hexagon.svg" alt="" class="background-shape">
+            <img src="./resources/svg/square.svg" alt="" class="background-shape">
+            <img src="./resources/svg/pentagon.svg" alt="" class="background-shape">
+            <img src="./resources/svg/triangle.svg" alt="" class="background-shape">
+            <img src="./resources/svg/triangle.svg" alt="" class="background-shape">
+        </div>
     </footer>
 </body>
 </html>
