@@ -2220,6 +2220,18 @@ footer > a:hover {
         gap: 0.25rem 1.75rem;
     }
 
+    .technology-bubble:nth-child(n)::before {
+        font-size: 1.3rem;
+    }
+
+    .technology-bubble:nth-child(n):hover::before {
+        transform: translate(-50%, 250%);
+    }
+
+    .technology-bubble:nth-child(5):hover::before {
+        transform:  translate(-50%, 125%);
+    }
+
     footer {
         height: 100vh;
         display: flex;
