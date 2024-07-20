@@ -727,7 +727,7 @@ footer > a:hover {
 
 /* 1360 and above */
 
-@media only screen and (min-width: 1361px) {
+@media only screen and (min-width: 1441px) {
 
     /* Hero starts here */
 
@@ -2108,7 +2108,7 @@ footer > a:hover {
 
 /* Landscape mode */
 
-@media only screen and (max-width: 844px) and (orientation: landscape) {
+@media only screen and (max-height: 512px) and (orientation: landscape) {
 
     header, section, footer {
         height: fit-content;
