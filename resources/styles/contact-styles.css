@@ -10,6 +10,15 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: stretch;
+}
+
 header {
     height: 5rem;
     background-color: var(--orange);
@@ -19,6 +28,7 @@ header {
 }
 
 h1 {
+    padding: 0.5rem 0;
     margin-left: 2.5%;
     color: rgb(240, 240, 240);
     text-shadow:
@@ -37,6 +47,7 @@ main {
     align-items: center;
     height: fit-content;
     padding-top: 3rem;
+    flex: 1;
 }
 
 ul {
@@ -84,9 +95,7 @@ blockquote > footer::before {
 }
 
 .go-back {
-    position: absolute;
     width: 100vw;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
