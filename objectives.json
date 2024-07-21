@@ -9,10 +9,10 @@
     "To Do List": {
         "Get Images for the hero": 1,
         "Get Icons for the skill section": 1,
-        "Design the skill section": 1,git s
+        "Design the skill section": 1,
         "Design the technologies known section": 1,
-        "Create a last call to action at the end (and perhaps the begining too)": 0,
-        "Design the contact page": 0,
-        "Make the page responsive": 0
+        "Create a last call to action at the end (and perhaps the begining too)": 1,
+        "Design the contact page": 1,
+        "Make the page responsive": 1
         }
 }
