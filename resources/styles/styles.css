@@ -562,7 +562,7 @@ section.selected-projects {
     --x: 630%;
     --y: 300%;
     --delay: 1.2s;
-    /* linux */
+    /* Mocha.js */
 }
 
 .bubbles .technology-bubble:nth-child(9) {
@@ -1064,7 +1064,7 @@ footer > a:hover {
 
     .technology-bubble:nth-child(8)::before {
         z-index: -1;
-        content: "Linux";
+        content: "Mocha.js";
         position: absolute;
         top: 50%;
         left: 50%;
@@ -1496,7 +1496,7 @@ footer > a:hover {
 
     .technology-bubble:nth-child(8)::before {
         z-index: -1;
-        content: "Linux";
+        content: "Mocha.js";
         position: absolute;
         top: 50%;
         left: 50%;
@@ -1932,7 +1932,7 @@ footer > a:hover {
 
     .technology-bubble:nth-child(8)::before {
         z-index: -1;
-        content: "Linux";
+        content: "Mocha.js";
         position: absolute;
         top: 50%;
         left: 50%;

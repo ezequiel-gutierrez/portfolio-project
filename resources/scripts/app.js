@@ -127,7 +127,7 @@ bubbles.forEach((elem, index) => {
                 changeText(h2Text, "JavaScript");
                 break;
             case 7:
-                changeText(h2Text, "Linux");
+                changeText(h2Text, "Mocha.js");
                 break;
             case 8:
                 changeText(h2Text, "Node.js");
